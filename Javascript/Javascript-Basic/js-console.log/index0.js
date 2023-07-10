@@ -1,1 +1,0 @@
-console.log('Meu nome é "NOME".Estou apreendendo Javascript ás', 10, 'da manha');
