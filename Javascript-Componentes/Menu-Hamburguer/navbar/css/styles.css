@@ -48,7 +48,7 @@
 } 
 
 .center {
-  width: 80%;
+  width: 400px;
   margin: 0 auto;
 }
 body {
@@ -115,6 +115,10 @@ nav {
 }
 .show-links {
   height: 10rem;
+}
+.log{
+    width: 400px;
+    margin: 0 auto;
 }
 @media screen and (min-width: 800px) {
   .nav-center {
