@@ -12,7 +12,11 @@ const people = [
 
   const youngPeople = people.filter(function(person){
     return person.age <= 25;
-  })
+  });
+
+  const developers = people.filter(function(person){
+    return person.position === 'developer';
+  });
   
-  console.log(youngPeople);
-  
+  //console.log(youngPeople);
+  console.log(developers);
