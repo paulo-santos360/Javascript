@@ -61,7 +61,7 @@ const highScore = students.map(function(students){
 
 });
 
-console.log(highScore);
+//console.log(highScore);
 
 // find
 
@@ -75,5 +75,38 @@ const random = fruits.find(function(fruit){
     return fruit === 'orange';
 })
 
-console.log(random)
-console.log(specificId);
+// console.log(random)
+// console.log(specificId);
+
+const averageScore = students.reduce(function(scoresTotal, student){
+    //console.log(student);
+    //return scoresTotal;
+    console.log(scoresTotal);
+    return scoresTotal + student.score
+}, 0) / students.length;//,0
+
+console.log(averageScore);
+
+const subject = 'history'; // {}
+
+const total = {};
+
+total[subject] = 'some value';
+console.log(total)
+
+const survey = students.reduce(function(survey,student){
+
+    //console.log(student.favoriteSubject);
+
+    const favSubject = student.favoriteSubject;
+
+    if(survey[favSubject]){ 
+         survey[favSubject] = survey[favSubject] + 1;
+    }
+        else {
+        survey[subject] = 1;
+    }
+    return survey;
+}, {});
+
+console.log(survey)
